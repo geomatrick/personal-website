@@ -1,4 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Patrick Woodhead - Personal Website
+
+A modern personal website built with Next.js, TypeScript, and Tailwind CSS, recreated from the original Notion/Super site.
+
+## Features
+
+- Clean, responsive design
+- Dark mode support with toggle
+- Professional profile section
+- Content sections (Blog, Reading List)
+- Social media links (LinkedIn, Twitter, Medium, GitHub)
+- Academic papers showcase
+- Optimized fonts with Inter
+- SEO-friendly metadata
 
 ## Getting Started
 
@@ -10,15 +23,18 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
+
+- Next.js 16
+- TypeScript
+- Tailwind CSS
+- Inter font (Google Fonts)
 
 ## Learn More
 
@@ -31,6 +47,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deployment Steps:
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Go to [Vercel](https://vercel.com/new) and import your repository
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Click "Deploy" and your site will be live in minutes!
+
+Vercel will automatically:
+- Build your Next.js application
+- Set up a production domain
+- Enable automatic deployments on push
+- Provide preview deployments for pull requests
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
