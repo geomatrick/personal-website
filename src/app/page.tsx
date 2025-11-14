@@ -1,22 +1,35 @@
 import ThemeToggle from '@/components/ThemeToggle';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <ThemeToggle />
       {/* Hero Section */}
-      <div className="relative w-full h-64 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600">
-        <div className="absolute inset-0 opacity-30" style={{
-          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(0,0,0,0.1) 35px, rgba(0,0,0,0.1) 36px),
-                           repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(0,0,0,0.1) 35px, rgba(0,0,0,0.1) 36px)`
-        }}></div>
+      <div className="relative w-full h-64 overflow-hidden">
+        <Image
+          src="/header-banner.jpg"
+          alt="Header banner"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-6 -mt-16 relative z-10">
         {/* Profile Section */}
         <div className="mb-8">
-          <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 mb-4 shadow-lg"></div>
+          <div className="w-24 h-24 rounded-full overflow-hidden mb-4 shadow-lg border-4 border-white dark:border-gray-800">
+            <Image
+              src="/profile.jpg"
+              alt="Patrick Woodhead"
+              width={96}
+              height={96}
+              className="object-cover"
+              priority
+            />
+          </div>
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
             Patrick Woodhead
           </h1>
@@ -42,31 +55,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Content Section */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-            Content
-          </h2>
-          <div className="space-y-3">
-            <a href="#blog" className="block p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-              <div className="flex items-center">
-                <span className="mr-3">📓</span>
-                <span className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                  Blog
-                </span>
-              </div>
-            </a>
-            <a href="#reading-list" className="block p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-              <div className="flex items-center">
-                <span className="mr-3">📕</span>
-                <span className="text-lg text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                  Reading List
-                </span>
-              </div>
-            </a>
-          </div>
-        </section>
-
         {/* Links Section */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
@@ -85,7 +73,7 @@ export default function Home() {
               <span className="text-gray-700 dark:text-gray-300">LinkedIn</span>
             </a>
             <a
-              href="https://twitter.com/pjwoodhead"
+              href="https://twitter.com/patrickwoodhead"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
@@ -96,7 +84,7 @@ export default function Home() {
               <span className="text-gray-700 dark:text-gray-300">Twitter</span>
             </a>
             <a
-              href="https://medium.com/@patrick.woodhead"
+              href="https://medium.com/@patrickwoodhead"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
@@ -107,7 +95,7 @@ export default function Home() {
               <span className="text-gray-700 dark:text-gray-300">Medium</span>
             </a>
             <a
-              href="https://github.com/patrickwoodhead"
+              href="https://github.com/geomatrick"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
@@ -127,7 +115,7 @@ export default function Home() {
           </h2>
           <div className="space-y-3">
             <a
-              href="#"
+              href="https://drive.google.com/file/d/12TjEZWt0eARq7lxRWFOIOITtdZoX17dy/view?usp=sharing"
               className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
               <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1">
@@ -144,7 +132,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="max-w-3xl mx-auto px-6 py-8 mt-12 border-t border-gray-200 dark:border-gray-700">
         <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-          © 2024 Patrick Woodhead. All rights reserved.
+          © 2025 Patrick Woodhead. All rights reserved.
         </p>
       </footer>
     </div>
