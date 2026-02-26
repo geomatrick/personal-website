@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
+import MermaidDiagram from '@/components/MermaidDiagram';
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
@@ -101,15 +103,21 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <li className="text-gray-700">{children}</li>
                 ),
                 code: ({ children }) => (
-                  <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
+                  <code className="bg-gray-100 text-gray-900 px-2 py-1 rounded text-sm font-mono">
                     {children}
                   </code>
                 ),
-                pre: ({ children }) => (
-                  <pre className="bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4">
-                    {children}
-                  </pre>
-                ),
+                pre: ({ children }) => {
+                  const child = React.Children.toArray(children)[0] as React.ReactElement<{ className?: string; children?: React.ReactNode }>;
+                  if (child?.props?.className?.includes('language-mermaid')) {
+                    return <MermaidDiagram chart={String(child.props.children).trim()} />;
+                  }
+                  return (
+                    <pre className="bg-gray-100 text-gray-900 p-4 rounded-lg overflow-x-auto mb-4">
+                      {children}
+                    </pre>
+                  );
+                },
                 blockquote: ({ children }) => (
                   <blockquote className="border-l-4 border-amber-500 pl-4 italic text-gray-600 my-4">
                     {children}
