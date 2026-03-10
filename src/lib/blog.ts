@@ -10,6 +10,7 @@ export interface BlogPost {
   date: string;
   categories: string[];
   description: string;
+  image?: string;
   content: string;
 }
 
@@ -32,6 +33,7 @@ export function getBlogPosts(): BlogPost[] {
       date: data.date || '',
       categories: data.categories || [],
       description: data.description || '',
+      image: data.image || undefined,
       content,
     };
   });
@@ -56,6 +58,7 @@ export function getBlogPost(slug: string): BlogPost | null {
     date: data.date || '',
     categories: data.categories || [],
     description: data.description || '',
+    image: data.image || undefined,
     content,
   };
 }

@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
@@ -21,10 +22,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     return { title: 'Post Not Found' };
   }
 
-  return {
+  const metadata: Record<string, unknown> = {
     title: post.title,
     description: post.description,
   };
+
+  if (post.image) {
+    metadata.openGraph = {
+      title: post.title,
+      description: post.description,
+      images: [{ url: post.image }],
+    };
+    metadata.twitter = {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: [post.image],
+    };
+  }
+
+  return metadata;
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -49,6 +66,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         </Link>
 
         <article>
+          {post.image && (
+            <div className="mb-8 rounded-lg overflow-hidden">
+              <Image
+                src={post.image}
+                alt={post.title}
+                width={1200}
+                height={630}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
+          )}
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               {post.title}

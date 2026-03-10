@@ -3,6 +3,7 @@ title: "Everyone a Node: How AI Agents Are Delivering the Self-Sovereign Interne
 date: "2026-03-06"
 categories: ["AI", "Agents", "Decentralisation"]
 description: "The original vision of the internet was peer-to-peer — every user a node, owning their own data. Web3 tried and failed to deliver it. AI agents and OpenClaw might actually get us there."
+image: "/blog/ai-sovereign-internet/crab-ethernet.png"
 ---
 
 ## TL;DR
