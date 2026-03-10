@@ -7,7 +7,7 @@ description: "The original vision of the internet was peer-to-peer — every use
 
 ## TL;DR
 
-I spent years believing Web3 would deliver a more sovereign internet — one where individuals owned their own data, identity, and online presence. It didn't. It replaced one set of middlemen with another and added so much friction that most people just handed custody back to centralised services anyway.
+I spent years believing Web3 would deliver a more sovereign internet — one where individuals owned their own data, identity, and online presence. It hasn't yet. So far, it has honestly replaced one set of middlemen with another and added so much friction that most people just handed custody back to centralised services anyway.
 
 Running OpenClaw recently reminded me of what that original vision actually felt like. A process running on my own hardware, acting on my behalf, storing my data. No platform in the middle.
 
@@ -71,4 +71,4 @@ I'm excited to see where OpenClaw and similar projects go. There are already so 
 
 One honest caveat though: AI agents still make inference requests to the big frontier labs. In that sense, you're trading one form of trust for another — but the terms are different. You're not handing over your data to be monetised; you're using a service to power something you control. To get to truly sovereign computation, you'd need either powerful models running locally or private centralised inference. That's a real gap in the current architecture, and it's one I'm keeping a close eye on.
 
-But the direction of travel feels right. The hope is that this movement holds both sovereignty and convenience as co-equal goals. Web3 purists prioritise purity over usability. The risk for AI agents is the opposite — prioritising convenience so heavily that sovereignty becomes an afterthought. Getting that balance right is what will determine whether this time the vision actually lands.
+But the direction of travel feels right. The hope is that this movement holds both sovereignty and convenience as co-equal goals. Web3 purists prioritise decentralisation over usability. The risk for AI agents is the opposite — prioritising convenience so heavily that sovereignty becomes an afterthought. Getting that balance right is what will determine whether this time the vision actually lands.
