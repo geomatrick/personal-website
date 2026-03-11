@@ -210,10 +210,23 @@ export default function Home() {
           <div className="flex items-center gap-3 mb-6">
             <span className="text-2xl">📄</span>
             <h2 className="text-xl font-semibold text-stone-100">
-              Research
+              Research & Publications
             </h2>
           </div>
           <div className="space-y-3">
+            <a
+              href="https://www.standard.co.uk/news/tech/understand-blockchain-part-one-background-double-spending-problem-emojis-a3793471.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-4 bg-stone-800/50 rounded-xl border border-stone-700 hover:border-amber-500 hover:shadow-md transition-all"
+            >
+              <h3 className="text-base font-medium text-stone-200 group-hover:text-amber-500 mb-1">
+                How to understand blockchain using emojis
+              </h3>
+              <p className="text-sm text-stone-400">
+                Published in the Evening Standard
+              </p>
+            </a>
             <a
               href="https://drive.google.com/file/d/12TjEZWt0eARq7lxRWFOIOITtdZoX17dy/view?usp=sharing"
               target="_blank"

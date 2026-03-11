@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Benne } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 
-const benne = Benne({
-  variable: "--font-benne",
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -37,7 +36,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body
-        className={`${benne.className} antialiased`}
+        className={`${sourceSerif.className} antialiased`}
       >
         {children}
       </body>
