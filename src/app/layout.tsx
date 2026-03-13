@@ -22,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" type="application/rss+xml" title="Patrick Woodhead" href="/feed.xml" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-TL2KT9EXMN"
           strategy="afterInteractive"
