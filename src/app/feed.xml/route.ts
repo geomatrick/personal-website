@@ -13,8 +13,16 @@ function escapeXml(str: string): string {
     .replace(/'/g, '&apos;');
 }
 
+function makeImageUrlsAbsolute(markdown: string): string {
+  return markdown.replace(
+    /!\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g,
+    (_, alt, src) => `![${alt}](${SITE_URL}${src.startsWith('/') ? '' : '/'}${src})`
+  );
+}
+
 async function markdownToHtml(markdown: string): Promise<string> {
-  const result = await remark().use(html).process(markdown);
+  const absoluteMarkdown = makeImageUrlsAbsolute(markdown);
+  const result = await remark().use(html).process(absoluteMarkdown);
   return result.toString();
 }
 
