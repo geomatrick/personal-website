@@ -7,6 +7,8 @@ description: "From Caesar's cipher to zero knowledge proofs - how humans have ke
 
 # A Brief History of Cryptography
 
+![](/blog/history-cryptography/history-cryptography.png)
+
 The history of cryptography is wilder than most people realise.
 
 We begin in ancient times. Famously, Julius Caesar popularised a "cipher" to encrypt his messages. He would shift the letters by a fixed number. A shift of three, for example, would make A become D.
