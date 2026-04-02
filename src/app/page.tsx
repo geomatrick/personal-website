@@ -61,6 +61,7 @@ function BlogSection() {
                   {new Date(post.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
+                    day: 'numeric',
                   })}
                 </span>
               </div>
@@ -94,6 +95,7 @@ function BlogSection() {
                   {new Date(post.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'short',
+                    day: 'numeric',
                   })}
                 </span>
               </div>
