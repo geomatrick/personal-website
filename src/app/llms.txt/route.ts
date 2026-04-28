@@ -14,7 +14,7 @@ export async function GET() {
 
   const llmsTxt = `# Patrick Woodhead
 
-> Founder & CEO @ Space Meridian. Previously Lab Lead @ Protocol Labs. Expertise in Mathematics, Cryptography, Engineering, and Design.
+> Head of Product @ Confidential. Previously Lab Lead @ Protocol Labs. Expertise in Mathematics, Cryptography, Engineering, and Design.
 
 Patrick Woodhead is a technologist and writer focused on cryptography, decentralized systems, and AI. He writes about zero knowledge proofs, blockchain, privacy-preserving computation, and the intersection of AI with data sovereignty.
 

@@ -10,8 +10,8 @@ const sourceSerif = Source_Serif_4({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://geomatrick.io'),
-  title: "Patrick Woodhead | Founder & CEO @ Space Meridian",
-  description: "Founder & CEO @ Space Meridian, Ex Lab Lead @ Protocol Labs. Building Filecoin Beam, the access layer for Filecoin. Expertise in Mathematics, Cryptography, Engineering, and Design.",
+  title: "Patrick Woodhead | Head of Product @ Confidential",
+  description: "Head of Product @ Confidential, Ex Lab Lead @ Protocol Labs. Building the privacy layer for AI. Expertise in Mathematics, Cryptography, Engineering, and Design.",
 };
 
 export default function RootLayout({

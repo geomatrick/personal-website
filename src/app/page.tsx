@@ -144,10 +144,10 @@ export default function Home() {
             Patrick Woodhead
           </h1>
           <p className="text-lg text-stone-400 mb-3">
-            Founder & CEO @ <span className="text-amber-500 font-medium">Space Meridian</span>
+            Head of Product @ <a href="https://confidential.ai" target="_blank" rel="noopener noreferrer" className="text-amber-500 font-medium hover:underline">Confidential</a>
           </p>
           <p className="text-stone-400 leading-relaxed">
-            Building Filecoin Beam, the access layer for Filecoin. Previously Lab Lead at Protocol Labs.
+            Building the privacy layer for AI. Previously Lab Lead at Protocol Labs.
           </p>
         </div>
 
