@@ -144,7 +144,7 @@ export default function Home() {
             Patrick Woodhead
           </h1>
           <p className="text-lg text-stone-400 mb-3">
-            Head of Product @ <a href="https://confidential.ai" target="_blank" rel="noopener noreferrer" className="text-amber-500 font-medium hover:underline">Confidential</a>
+            Head of Product @ <a href="https://confidential.ai" target="_blank" rel="noopener noreferrer" className="text-amber-500 font-medium hover:underline">Confidential AI</a>
           </p>
           <p className="text-stone-400 leading-relaxed">
             Building the privacy layer for AI. Previously Lab Lead at Protocol Labs.
@@ -204,6 +204,17 @@ export default function Home() {
               </svg>
               <span className="text-sm font-medium text-stone-300">Medium</span>
             </a>
+            <a
+              href="https://scholar.google.com/citations?user=oHxjkdIAAAAJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-lg transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+              </svg>
+              <span className="text-sm font-medium text-stone-300">Google Scholar</span>
+            </a>
           </div>
         </section>
 
@@ -216,6 +227,19 @@ export default function Home() {
             </h2>
           </div>
           <div className="space-y-3">
+            <a
+              href="https://arxiv.org/abs/2608.04039"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block p-4 bg-stone-800/50 rounded-xl border border-stone-700 hover:border-amber-500 hover:shadow-md transition-all"
+            >
+              <h3 className="text-base font-medium text-stone-200 group-hover:text-amber-500 mb-1">
+                AMD SEV-SNP: A Confidential Computing Primer
+              </h3>
+              <p className="text-sm text-stone-400">
+                arXiv preprint on AMD SEV-SNP confidential computing, with Amean Asad and Patrick McClurg
+              </p>
+            </a>
             <a
               href="https://www.standard.co.uk/news/tech/understand-blockchain-part-one-background-double-spending-problem-emojis-a3793471.html"
               target="_blank"
